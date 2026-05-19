@@ -13,3 +13,9 @@ These are real captures from the local Streamlit dashboard and the terminal Clou
 | Terminal detector output | `identityriskgraph-terminal-detector-output.png` |
 
 Optional future asset: short GIF showing the flow from CloudTrail finding to user investigation.
+
+When refreshing screenshots, run the dashboard locally and use real app state:
+
+```powershell
+python -m streamlit run app.py
+```

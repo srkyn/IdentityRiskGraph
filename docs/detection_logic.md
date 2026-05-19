@@ -29,3 +29,9 @@ CloudTrail IAM rules use cloud-focused mappings such as Cloud Accounts, Account 
 ## False Positive Reduction
 
 The same event can score differently based on identity context. For example, a payroll export by a finance manager may be medium risk, while the same export by a contractor with recent role changes, an unmanaged device, and nested inherited access becomes critical.
+
+## Detection-As-Code Foundation
+
+CloudTrail IAM rules also have a lightweight YAML format in `rules/cloudtrail_iam_rules.yaml`. The YAML engine supports simple event-name and field matching for rules such as `AttachUserPolicy` with `AdministratorAccess`, `AddUserToGroup` into privileged groups, `StopLogging`, `DeleteTrail`, `CreateAccessKey`, `CreateLoginProfile`, and `PutUserPolicy`.
+
+The Python engine remains the richer default because it can express correlation and context-aware logic. The YAML engine demonstrates how the project can evolve toward maintainable detection-as-code without requiring a SIEM or cloud API.

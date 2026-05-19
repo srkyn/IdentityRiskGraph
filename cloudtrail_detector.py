@@ -5,16 +5,22 @@ from dataclasses import asdict
 
 from src.aws_iam_detections import detect_aws_iam_risks
 from src.cloudtrail_parser import load_cloudtrail
+from src.rule_loader import evaluate_yaml_rules, load_yaml_rules
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Detect risky AWS IAM CloudTrail control-plane events.")
     parser.add_argument("--file", required=True, help="Path to CloudTrail JSON file. Supports Records[], list, or single-record JSON.")
+    parser.add_argument("--engine", choices=["python", "yaml"], default="python", help="Detection engine to use. The Python engine is richer; the YAML engine demonstrates detection-as-code rules.")
+    parser.add_argument("--rules", default="rules/cloudtrail_iam_rules.yaml", help="YAML rule file used when --engine yaml is selected.")
     parser.add_argument("--json", action="store_true", help="Print machine-readable JSON findings.")
     args = parser.parse_args()
 
     events = load_cloudtrail(args.file)
-    findings = detect_aws_iam_risks(events)
+    if args.engine == "yaml":
+        findings = evaluate_yaml_rules(events, load_yaml_rules(args.rules))
+    else:
+        findings = detect_aws_iam_risks(events)
 
     if args.json:
         import json
@@ -24,6 +30,7 @@ def main() -> None:
 
     print(f"IdentityRiskGraph CloudTrail IAM Detector")
     print(f"File: {args.file}")
+    print(f"Engine: {args.engine}")
     print(f"Events parsed: {len(events)}")
     print(f"Alerts: {len(findings)}")
     print("=" * 72)
@@ -47,4 +54,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

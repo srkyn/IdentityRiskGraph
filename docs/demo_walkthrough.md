@@ -10,6 +10,14 @@ python cloudtrail_detector.py --file data/cloudtrail/sample_cloudtrail_iam_event
 
 Point out that raw CloudTrail-style JSON becomes readable IAM alerts with severity, actor, target, source IP, MITRE mapping, evidence, and recommended action.
 
+Then show the detection-as-code path:
+
+```powershell
+python cloudtrail_detector.py --engine yaml --file data/cloudtrail/suspicious_cloudtrail_events.json
+```
+
+This demonstrates that the project supports both a richer Python detection engine and a lightweight YAML rule format for maintainable CloudTrail IAM rules.
+
 ## 2. Open CloudTrail IAM Detections
 
 In the Streamlit dashboard, open **CloudTrail IAM Detections**.
@@ -59,4 +67,3 @@ Open **Export / Reports** and show:
 - Markdown user investigation report
 
 This ties the project back to SOC and detection engineering workflows: alerts, triage, evidence, and reporting.
-

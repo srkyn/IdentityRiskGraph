@@ -73,6 +73,7 @@ Risk scoring uses:
 
 ```powershell
 python cloudtrail_detector.py --file data/cloudtrail/sample_cloudtrail_iam_events.json
+python cloudtrail_detector.py --engine yaml --file data/cloudtrail/suspicious_cloudtrail_events.json
 ```
 
 ### 2. Streamlit Investigation Dashboard
@@ -106,6 +107,7 @@ python -m streamlit run app.py
 - Effective permission resolver for direct roles, inherited roles, nested groups, denies, and permission boundaries
 - Rule-specific recommendations and MITRE mappings
 - Detection-as-code foundation in `rules/cloudtrail_iam_rules.yaml`
+- Optional YAML detection engine for simple CloudTrail IAM rule execution
 - Splunk-friendly JSON export
 - Pytest suite and GitHub Actions CI
 
@@ -231,6 +233,7 @@ Run CloudTrail demo:
 ```powershell
 python cloudtrail_detector.py --file data/cloudtrail/sample_cloudtrail_iam_events.json
 python cloudtrail_detector.py --file data/cloudtrail/suspicious_cloudtrail_events.json
+python cloudtrail_detector.py --engine yaml --file data/cloudtrail/suspicious_cloudtrail_events.json
 ```
 
 Makefile shortcuts:
@@ -250,6 +253,7 @@ The test suite covers:
 - normalized CloudTrail output
 - AWS IAM detections
 - YAML rule loading
+- YAML rule execution against CloudTrail events
 - Splunk export shape
 - nested group resolution
 - permission boundaries
