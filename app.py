@@ -207,7 +207,7 @@ def cloudtrail_iam_detections(data: dict) -> None:
     st.caption("Raw CloudTrail-style IAM events are parsed first, alerted in the terminal, then normalized into dashboard-ready findings.")
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        kpi("Loaded File", Path(data["cloudtrail_path"]).name)
+        kpi("Loaded File", "Sample IAM Events")
     with c2:
         kpi("CloudTrail Events", len(data["cloudtrail_events"]))
     with c3:

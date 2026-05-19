@@ -1,12 +1,15 @@
-# Screenshot Checklist
+# Screenshot Inventory
 
-Capture these images for the GitHub README and portfolio posts:
+These are real captures from the local Streamlit dashboard and the terminal CloudTrail detector.
 
-1. Executive Overview
-2. CloudTrail IAM Detections
-3. Risky Identities
-4. Detection Findings expanded detail
-5. User Investigation page
-6. Identity Graph
-7. Terminal detector output
+| View | File |
+|---|---|
+| Executive Overview | `identityriskgraph-executive-overview.png` |
+| CloudTrail IAM Detections | `identityriskgraph-cloudtrail-iam-detections.png` |
+| Risky Identities | `identityriskgraph-risky-identities.png` |
+| Detection Findings expanded detail | `identityriskgraph-detection-findings-expanded.png` |
+| User Investigation page | `identityriskgraph-user-investigation.png` |
+| Identity Graph | `identityriskgraph-identity-graph.png` |
+| Terminal detector output | `identityriskgraph-terminal-detector-output.png` |
 
+Optional future asset: short GIF showing the flow from CloudTrail finding to user investigation.

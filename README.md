@@ -10,22 +10,23 @@
 
 IdentityRiskGraph starts with realistic CloudTrail IAM events, detects risky identity control-plane changes, resolves nested access paths, and turns noisy IAM activity into explainable risk scores and dashboard-ready investigations.
 
-![IdentityRiskGraph executive overview](screenshots/identityriskgraph-overview.png)
+![IdentityRiskGraph executive overview](screenshots/identityriskgraph-executive-overview.png)
 
 ## Screenshots And Demo
 
-Screenshots to capture are tracked in [screenshots/README.md](screenshots/README.md).
+Real screenshots from the running app and terminal detector are stored in [screenshots/](screenshots/).
 
-Recommended demo assets:
+| View | Screenshot |
+|---|---|
+| Executive Overview | ![Executive Overview](screenshots/identityriskgraph-executive-overview.png) |
+| CloudTrail IAM Detections | ![CloudTrail IAM Detections](screenshots/identityriskgraph-cloudtrail-iam-detections.png) |
+| Risky Identities | ![Risky Identities](screenshots/identityriskgraph-risky-identities.png) |
+| Detection Finding Detail | ![Detection Findings Expanded](screenshots/identityriskgraph-detection-findings-expanded.png) |
+| User Investigation | ![User Investigation](screenshots/identityriskgraph-user-investigation.png) |
+| Identity Graph | ![Identity Graph](screenshots/identityriskgraph-identity-graph.png) |
+| Terminal Detector Output | ![Terminal Detector Output](screenshots/identityriskgraph-terminal-detector-output.png) |
 
-- Executive Overview
-- CloudTrail IAM Detections
-- Risky Identities
-- Detection Findings expanded detail
-- User Investigation page
-- Identity Graph
-- Terminal detector output
-- Optional short GIF walking through CloudTrail finding to user investigation
+An optional future improvement is a short GIF walking from a CloudTrail finding into a user investigation.
 
 ## Why This Project Exists
 
@@ -285,4 +286,3 @@ The goal is practical: reduce noisy IAM alerts by adding identity context before
 ## Disclaimer
 
 All data is simulated. This project is defensive only. It does not collect credentials, use real API keys, connect to production tenants, or perform offensive exploitation.
-
