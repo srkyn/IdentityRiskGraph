@@ -1,0 +1,662 @@
+[
+  {
+    "user_id": "u001",
+    "display_name": "Ava Martinez",
+    "email": "ava.martinez@hospital.example",
+    "department": "IT",
+    "job_title": "Helpdesk Technician",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2025-04-13T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_helpdesk"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u002",
+    "display_name": "Brian Chen",
+    "email": "brian.chen@hospital.example",
+    "department": "IT",
+    "job_title": "Senior Sysadmin",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-02-03T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US",
+      "New York, US"
+    ],
+    "assigned_groups": [
+      "g_sysadmins"
+    ],
+    "direct_roles": [
+      "r_sysadmin"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u003",
+    "display_name": "Priya Shah",
+    "email": "priya.shah@hospital.example",
+    "department": "Security",
+    "job_title": "IAM Administrator",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-11-30T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_iam_admins"
+    ],
+    "direct_roles": [
+      "r_iam_admin"
+    ],
+    "risk_tags": [
+      "access_manager"
+    ]
+  },
+  {
+    "user_id": "u004",
+    "display_name": "Morgan Lee",
+    "email": "morgan.lee@hospital.example",
+    "department": "Security",
+    "job_title": "Global Admin",
+    "user_type": "employee",
+    "manager": null,
+    "status": "active",
+    "created_at": "2021-12-30T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_priv_admins"
+    ],
+    "direct_roles": [
+      "r_global_admin"
+    ],
+    "risk_tags": [
+      "access_manager"
+    ]
+  },
+  {
+    "user_id": "u005",
+    "display_name": "Nora Patel",
+    "email": "nora.patel@hospital.example",
+    "department": "Finance",
+    "job_title": "Finance Analyst",
+    "user_type": "employee",
+    "manager": "u015",
+    "status": "active",
+    "created_at": "2024-03-09T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_finance"
+    ],
+    "direct_roles": [
+      "r_finance_reader"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u006",
+    "display_name": "Ethan Brooks",
+    "email": "ethan.brooks@hospital.example",
+    "department": "HR",
+    "job_title": "HR Generalist",
+    "user_type": "employee",
+    "manager": "u016",
+    "status": "active",
+    "created_at": "2024-09-25T12:00:00Z",
+    "last_login": "2026-05-16T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_hr"
+    ],
+    "direct_roles": [
+      "r_hr_reader"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u007",
+    "display_name": "Lena Ortiz",
+    "email": "lena.ortiz@hospital.example",
+    "department": "Engineering",
+    "job_title": "Developer",
+    "user_type": "employee",
+    "manager": "u014",
+    "status": "active",
+    "created_at": "2025-01-03T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Seattle, US"
+    ],
+    "assigned_groups": [
+      "g_developers"
+    ],
+    "direct_roles": [
+      "r_developer"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u008",
+    "display_name": "Caleb Stone",
+    "email": "caleb.stone@vendor.example",
+    "department": "Analytics",
+    "job_title": "Contractor Analyst",
+    "user_type": "contractor",
+    "manager": "u005",
+    "status": "active",
+    "created_at": "2026-02-27T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Chicago, US"
+    ],
+    "assigned_groups": [
+      "g_contractors"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u009",
+    "display_name": "Ruth Kim",
+    "email": "ruth.kim@hospital.example",
+    "department": "Clinical Apps",
+    "job_title": "Dormant Employee",
+    "user_type": "employee",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2020-11-25T12:00:00Z",
+    "last_login": "2026-02-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_clinical_apps"
+    ],
+    "direct_roles": [],
+    "risk_tags": [
+      "dormant"
+    ]
+  },
+  {
+    "user_id": "u010",
+    "display_name": "Omar Hassan",
+    "email": "omar.hassan@hospital.example",
+    "department": "IT",
+    "job_title": "Recently Promoted Sysadmin",
+    "user_type": "employee",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2025-01-03T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_helpdesk"
+    ],
+    "direct_roles": [
+      "r_helpdesk"
+    ],
+    "risk_tags": [
+      "recently_promoted"
+    ]
+  },
+  {
+    "user_id": "u011",
+    "display_name": "Grace Miller",
+    "email": "grace.miller@hospital.example",
+    "department": "Finance",
+    "job_title": "Terminated Finance User",
+    "user_type": "employee",
+    "manager": "u015",
+    "status": "terminated",
+    "created_at": "2023-11-30T12:00:00Z",
+    "last_login": "2026-03-04T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_finance"
+    ],
+    "direct_roles": [
+      "r_finance_reader"
+    ],
+    "risk_tags": [
+      "dormant",
+      "terminated_not_disabled"
+    ]
+  },
+  {
+    "user_id": "u012",
+    "display_name": "svc-ehr-sync",
+    "email": "svc-ehr-sync@hospital.example",
+    "department": "IT",
+    "job_title": "EHR Sync Service Account",
+    "user_type": "service_account",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2023-08-22T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_service_accounts"
+    ],
+    "direct_roles": [
+      "r_service_operator"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u013",
+    "display_name": "Break Glass Admin",
+    "email": "breakglass-admin@hospital.example",
+    "department": "Security",
+    "job_title": "Emergency Access Account",
+    "user_type": "break_glass",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2022-04-09T12:00:00Z",
+    "last_login": "2026-01-18T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [],
+    "direct_roles": [
+      "r_break_glass"
+    ],
+    "risk_tags": [
+      "break_glass"
+    ]
+  },
+  {
+    "user_id": "u014",
+    "display_name": "Mia Nguyen",
+    "email": "mia.nguyen@hospital.example",
+    "department": "Engineering",
+    "job_title": "Engineering Manager",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-05-14T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Seattle, US"
+    ],
+    "assigned_groups": [
+      "g_developers"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u015",
+    "display_name": "Victor Alvarez",
+    "email": "victor.alvarez@hospital.example",
+    "department": "Finance",
+    "job_title": "Finance Manager",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2022-10-26T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_finance"
+    ],
+    "direct_roles": [
+      "r_payroll_export"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u016",
+    "display_name": "Hannah White",
+    "email": "hannah.white@hospital.example",
+    "department": "HR",
+    "job_title": "HR Director",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-02-03T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_hr"
+    ],
+    "direct_roles": [
+      "r_hr_reader"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u017",
+    "display_name": "David User",
+    "email": "david.user@hospital.example",
+    "department": "IT",
+    "job_title": "Helpdesk Technician",
+    "user_type": "employee",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2025-02-22T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_helpdesk_nested"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u018",
+    "display_name": "Ivy Ross",
+    "email": "ivy.ross@hospital.example",
+    "department": "Research",
+    "job_title": "Data Scientist",
+    "user_type": "employee",
+    "manager": "u020",
+    "status": "active",
+    "created_at": "2025-07-22T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "San Francisco, US"
+    ],
+    "assigned_groups": [
+      "g_research"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u019",
+    "display_name": "Noah Green",
+    "email": "noah.green@hospital.example",
+    "department": "Security",
+    "job_title": "SOC Analyst",
+    "user_type": "employee",
+    "manager": "u003",
+    "status": "active",
+    "created_at": "2025-07-02T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_soc"
+    ],
+    "direct_roles": [
+      "r_security_reader"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u020",
+    "display_name": "Sophia Adams",
+    "email": "sophia.adams@hospital.example",
+    "department": "Research",
+    "job_title": "Research Director",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-11-30T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "San Francisco, US"
+    ],
+    "assigned_groups": [
+      "g_research"
+    ],
+    "direct_roles": [
+      "r_contractor_export"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u021",
+    "display_name": "Julian Park",
+    "email": "julian.park@hospital.example",
+    "department": "IT",
+    "job_title": "Endpoint Engineer",
+    "user_type": "employee",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2025-03-14T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_it_ops"
+    ],
+    "direct_roles": [
+      "r_sysadmin"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u022",
+    "display_name": "Tara Singh",
+    "email": "tara.singh@hospital.example",
+    "department": "Clinical",
+    "job_title": "Nurse Manager",
+    "user_type": "employee",
+    "manager": "u024",
+    "status": "active",
+    "created_at": "2024-06-17T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_clinical_apps"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u023",
+    "display_name": "Riley Evans",
+    "email": "riley.evans@intern.example",
+    "department": "Finance",
+    "job_title": "Security Intern",
+    "user_type": "contractor",
+    "manager": "u019",
+    "status": "active",
+    "created_at": "2026-04-18T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_interns"
+    ],
+    "direct_roles": [
+      "r_intern_boundary"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u024",
+    "display_name": "Elena Garcia",
+    "email": "elena.garcia@hospital.example",
+    "department": "Clinical",
+    "job_title": "Clinical Apps Manager",
+    "user_type": "employee",
+    "manager": "u004",
+    "status": "active",
+    "created_at": "2023-08-22T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_clinical_apps"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u025",
+    "display_name": "Sam Wilson",
+    "email": "sam.wilson@hospital.example",
+    "department": "IT",
+    "job_title": "Backup Administrator",
+    "user_type": "employee",
+    "manager": "u002",
+    "status": "active",
+    "created_at": "2024-09-25T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "New York, US"
+    ],
+    "assigned_groups": [
+      "g_backup_admins"
+    ],
+    "direct_roles": [
+      "r_backup_admin"
+    ],
+    "risk_tags": [
+      "stale_privileged_assignment"
+    ]
+  },
+  {
+    "user_id": "u026",
+    "display_name": "Kara Young",
+    "email": "kara.young@hospital.example",
+    "department": "Security",
+    "job_title": "Cloud Security Engineer",
+    "user_type": "employee",
+    "manager": "u003",
+    "status": "active",
+    "created_at": "2025-03-24T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_soc",
+      "g_cloud_admins"
+    ],
+    "direct_roles": [
+      "r_cloud_storage_admin"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u027",
+    "display_name": "Peter Hall",
+    "email": "peter.hall@vendor.example",
+    "department": "Facilities",
+    "job_title": "Vendor Support",
+    "user_type": "contractor",
+    "manager": "u021",
+    "status": "active",
+    "created_at": "2026-03-19T12:00:00Z",
+    "last_login": "2026-05-15T12:00:00Z",
+    "normal_locations": [
+      "Miami, US"
+    ],
+    "assigned_groups": [
+      "g_contractors"
+    ],
+    "direct_roles": [],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u028",
+    "display_name": "Zoe King",
+    "email": "zoe.king@hospital.example",
+    "department": "Finance",
+    "job_title": "Payroll Specialist",
+    "user_type": "employee",
+    "manager": "u015",
+    "status": "active",
+    "created_at": "2025-01-03T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_finance"
+    ],
+    "direct_roles": [
+      "r_payroll_export"
+    ],
+    "risk_tags": []
+  },
+  {
+    "user_id": "u029",
+    "display_name": "Alan Wright",
+    "email": "alan.wright@hospital.example",
+    "department": "IT",
+    "job_title": "Access Coordinator",
+    "user_type": "employee",
+    "manager": "u003",
+    "status": "active",
+    "created_at": "2025-06-02T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Boston, US"
+    ],
+    "assigned_groups": [
+      "g_iam_admins"
+    ],
+    "direct_roles": [
+      "r_iam_admin"
+    ],
+    "risk_tags": [
+      "access_manager"
+    ]
+  },
+  {
+    "user_id": "u030",
+    "display_name": "Ciara Scott",
+    "email": "ciara.scott@hospital.example",
+    "department": "Engineering",
+    "job_title": "DevOps Engineer",
+    "user_type": "employee",
+    "manager": "u014",
+    "status": "active",
+    "created_at": "2025-08-11T12:00:00Z",
+    "last_login": "2026-05-17T12:00:00Z",
+    "normal_locations": [
+      "Seattle, US"
+    ],
+    "assigned_groups": [
+      "g_developers",
+      "g_cloud_admins"
+    ],
+    "direct_roles": [
+      "r_developer"
+    ],
+    "risk_tags": []
+  }
+]

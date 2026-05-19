@@ -1,0 +1,225 @@
+[
+  {
+    "change_id": "c001",
+    "timestamp": "2026-04-26T12:00:00Z",
+    "actor_user_id": "u029",
+    "target_user_id": "u010",
+    "change_type": "role_granted",
+    "target_object": "r_sysadmin",
+    "details": {
+      "privileged": true,
+      "ticket": "CHG-1001"
+    }
+  },
+  {
+    "change_id": "c002",
+    "timestamp": "2026-04-27T12:00:00Z",
+    "actor_user_id": "u010",
+    "target_user_id": "u010",
+    "change_type": "group_added",
+    "target_object": "g_it_ops",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c003",
+    "timestamp": "2026-04-28T12:00:00Z",
+    "actor_user_id": "u005",
+    "target_user_id": "u008",
+    "change_type": "group_added",
+    "target_object": "g_contractors",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c004",
+    "timestamp": "2026-04-30T12:00:00Z",
+    "actor_user_id": "u020",
+    "target_user_id": "u008",
+    "change_type": "role_granted",
+    "target_object": "r_contractor_export",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c005",
+    "timestamp": "2026-05-02T12:00:00Z",
+    "actor_user_id": "u005",
+    "target_user_id": "u023",
+    "change_type": "role_granted",
+    "target_object": "r_intern_boundary",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c006",
+    "timestamp": "2026-05-04T12:00:00Z",
+    "actor_user_id": "u019",
+    "target_user_id": "u023",
+    "change_type": "group_added",
+    "target_object": "g_interns",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c007",
+    "timestamp": "2026-05-06T12:00:00Z",
+    "actor_user_id": "u006",
+    "target_user_id": "u011",
+    "change_type": "status_changed",
+    "target_object": "terminated_not_disabled",
+    "details": {
+      "status": "terminated",
+      "disabled": false
+    }
+  },
+  {
+    "change_id": "c008",
+    "timestamp": "2026-05-08T12:00:00Z",
+    "actor_user_id": "u004",
+    "target_user_id": "u017",
+    "change_type": "group_added",
+    "target_object": "g_helpdesk_nested",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c009",
+    "timestamp": "2026-05-17T16:00:00Z",
+    "actor_user_id": "u005",
+    "target_user_id": "u008",
+    "change_type": "role_granted",
+    "target_object": "r_payroll_export",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c010",
+    "timestamp": "2026-05-17T15:00:00Z",
+    "actor_user_id": "u027",
+    "target_user_id": "u008",
+    "change_type": "role_granted",
+    "target_object": "r_global_admin",
+    "details": {
+      "privileged": true,
+      "unusual_actor": true
+    }
+  },
+  {
+    "change_id": "c011",
+    "timestamp": "2026-05-11T12:00:00Z",
+    "actor_user_id": "u003",
+    "target_user_id": "u012",
+    "change_type": "role_granted",
+    "target_object": "r_service_operator",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c012",
+    "timestamp": "2026-05-12T12:00:00Z",
+    "actor_user_id": "u029",
+    "target_user_id": "u026",
+    "change_type": "group_added",
+    "target_object": "g_cloud_admins",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c013",
+    "timestamp": "2026-05-13T12:00:00Z",
+    "actor_user_id": "u003",
+    "target_user_id": "u019",
+    "change_type": "group_added",
+    "target_object": "g_soc",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c014",
+    "timestamp": "2026-05-14T12:00:00Z",
+    "actor_user_id": "u015",
+    "target_user_id": "u028",
+    "change_type": "role_granted",
+    "target_object": "r_payroll_export",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c015",
+    "timestamp": "2026-05-15T12:00:00Z",
+    "actor_user_id": "u002",
+    "target_user_id": "u025",
+    "change_type": "role_granted",
+    "target_object": "r_backup_admin",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c016",
+    "timestamp": "2026-05-16T12:00:00Z",
+    "actor_user_id": "u021",
+    "target_user_id": "u001",
+    "change_type": "group_added",
+    "target_object": "g_helpdesk",
+    "details": {
+      "privileged": false
+    }
+  },
+  {
+    "change_id": "c017",
+    "timestamp": "2026-05-17T12:00:00Z",
+    "actor_user_id": "u003",
+    "target_user_id": "u003",
+    "change_type": "role_granted",
+    "target_object": "r_iam_admin",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c018",
+    "timestamp": "2026-05-18T12:00:00Z",
+    "actor_user_id": "u004",
+    "target_user_id": "u013",
+    "change_type": "role_granted",
+    "target_object": "r_break_glass",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c019",
+    "timestamp": "2026-05-19T12:00:00Z",
+    "actor_user_id": "u014",
+    "target_user_id": "u030",
+    "change_type": "group_added",
+    "target_object": "g_cloud_admins",
+    "details": {
+      "privileged": true
+    }
+  },
+  {
+    "change_id": "c020",
+    "timestamp": "2026-05-20T12:00:00Z",
+    "actor_user_id": "u029",
+    "target_user_id": "u002",
+    "change_type": "role_granted",
+    "target_object": "r_sysadmin",
+    "details": {
+      "privileged": true
+    }
+  }
+]

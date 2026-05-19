@@ -1,0 +1,202 @@
+[
+  {
+    "device_id": "d001",
+    "hostname": "WRK-001",
+    "owner_user_id": "u001",
+    "platform": "macOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-17T12:00:00Z"
+  },
+  {
+    "device_id": "d002",
+    "hostname": "WRK-002",
+    "owner_user_id": "u002",
+    "platform": "Linux",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-16T12:00:00Z"
+  },
+  {
+    "device_id": "d003",
+    "hostname": "WRK-003",
+    "owner_user_id": "u003",
+    "platform": "iOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-15T12:00:00Z"
+  },
+  {
+    "device_id": "d004",
+    "hostname": "WRK-004",
+    "owner_user_id": "u004",
+    "platform": "Windows",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-14T12:00:00Z"
+  },
+  {
+    "device_id": "d005",
+    "hostname": "WRK-005",
+    "owner_user_id": "u005",
+    "platform": "macOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-13T12:00:00Z"
+  },
+  {
+    "device_id": "d006",
+    "hostname": "WRK-006",
+    "owner_user_id": "u006",
+    "platform": "Linux",
+    "managed": false,
+    "compliant": false,
+    "trust_level": "untrusted",
+    "last_seen": "2026-05-12T12:00:00Z"
+  },
+  {
+    "device_id": "d007",
+    "hostname": "WRK-007",
+    "owner_user_id": "u007",
+    "platform": "iOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-11T12:00:00Z"
+  },
+  {
+    "device_id": "d008",
+    "hostname": "WRK-008",
+    "owner_user_id": "u008",
+    "platform": "Windows",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-10T12:00:00Z"
+  },
+  {
+    "device_id": "d009",
+    "hostname": "WRK-009",
+    "owner_user_id": "u009",
+    "platform": "macOS",
+    "managed": true,
+    "compliant": false,
+    "trust_level": "noncompliant",
+    "last_seen": "2026-05-09T12:00:00Z"
+  },
+  {
+    "device_id": "d010",
+    "hostname": "WRK-010",
+    "owner_user_id": "u010",
+    "platform": "Linux",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-18T12:00:00Z"
+  },
+  {
+    "device_id": "d011",
+    "hostname": "BYOD-GLOBALADMIN",
+    "owner_user_id": "u004",
+    "platform": "iOS",
+    "managed": false,
+    "compliant": false,
+    "trust_level": "untrusted",
+    "last_seen": "2026-05-17T12:00:00Z"
+  },
+  {
+    "device_id": "d012",
+    "hostname": "WRK-012",
+    "owner_user_id": "u012",
+    "platform": "Windows",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-16T12:00:00Z"
+  },
+  {
+    "device_id": "d013",
+    "hostname": "WRK-013",
+    "owner_user_id": "u013",
+    "platform": "macOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-15T12:00:00Z"
+  },
+  {
+    "device_id": "d014",
+    "hostname": "WRK-014",
+    "owner_user_id": "u014",
+    "platform": "Linux",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-14T12:00:00Z"
+  },
+  {
+    "device_id": "d015",
+    "hostname": "VENDOR-LAPTOP-01",
+    "owner_user_id": "u008",
+    "platform": "iOS",
+    "managed": false,
+    "compliant": false,
+    "trust_level": "untrusted",
+    "last_seen": "2026-05-13T12:00:00Z"
+  },
+  {
+    "device_id": "d016",
+    "hostname": "WRK-016",
+    "owner_user_id": "u016",
+    "platform": "Windows",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-12T12:00:00Z"
+  },
+  {
+    "device_id": "d017",
+    "hostname": "WRK-017",
+    "owner_user_id": "u017",
+    "platform": "macOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-11T12:00:00Z"
+  },
+  {
+    "device_id": "d018",
+    "hostname": "WRK-018",
+    "owner_user_id": "u018",
+    "platform": "Linux",
+    "managed": false,
+    "compliant": false,
+    "trust_level": "untrusted",
+    "last_seen": "2026-05-10T12:00:00Z"
+  },
+  {
+    "device_id": "d019",
+    "hostname": "WRK-019",
+    "owner_user_id": "u019",
+    "platform": "iOS",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-09T12:00:00Z"
+  },
+  {
+    "device_id": "d020",
+    "hostname": "WRK-020",
+    "owner_user_id": "u020",
+    "platform": "Windows",
+    "managed": true,
+    "compliant": true,
+    "trust_level": "trusted",
+    "last_seen": "2026-05-18T12:00:00Z"
+  }
+]

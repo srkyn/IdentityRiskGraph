@@ -1,0 +1,298 @@
+[
+  {
+    "binding_id": "b_u002_r_sysadmin",
+    "principal_type": "user",
+    "principal_id": "u002",
+    "role_id": "r_sysadmin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u003_r_iam_admin",
+    "principal_type": "user",
+    "principal_id": "u003",
+    "role_id": "r_iam_admin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u004_r_global_admin",
+    "principal_type": "user",
+    "principal_id": "u004",
+    "role_id": "r_global_admin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u005_r_finance_reader",
+    "principal_type": "user",
+    "principal_id": "u005",
+    "role_id": "r_finance_reader",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u006_r_hr_reader",
+    "principal_type": "user",
+    "principal_id": "u006",
+    "role_id": "r_hr_reader",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u007_r_developer",
+    "principal_type": "user",
+    "principal_id": "u007",
+    "role_id": "r_developer",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u010_r_helpdesk",
+    "principal_type": "user",
+    "principal_id": "u010",
+    "role_id": "r_helpdesk",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u011_r_finance_reader",
+    "principal_type": "user",
+    "principal_id": "u011",
+    "role_id": "r_finance_reader",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u012_r_service_operator",
+    "principal_type": "user",
+    "principal_id": "u012",
+    "role_id": "r_service_operator",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u013_r_break_glass",
+    "principal_type": "user",
+    "principal_id": "u013",
+    "role_id": "r_break_glass",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u015_r_payroll_export",
+    "principal_type": "user",
+    "principal_id": "u015",
+    "role_id": "r_payroll_export",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u016_r_hr_reader",
+    "principal_type": "user",
+    "principal_id": "u016",
+    "role_id": "r_hr_reader",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u019_r_security_reader",
+    "principal_type": "user",
+    "principal_id": "u019",
+    "role_id": "r_security_reader",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u020_r_contractor_export",
+    "principal_type": "user",
+    "principal_id": "u020",
+    "role_id": "r_contractor_export",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u021_r_sysadmin",
+    "principal_type": "user",
+    "principal_id": "u021",
+    "role_id": "r_sysadmin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u023_r_intern_boundary",
+    "principal_type": "user",
+    "principal_id": "u023",
+    "role_id": "r_intern_boundary",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u025_r_backup_admin",
+    "principal_type": "user",
+    "principal_id": "u025",
+    "role_id": "r_backup_admin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u026_r_cloud_storage_admin",
+    "principal_type": "user",
+    "principal_id": "u026",
+    "role_id": "r_cloud_storage_admin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u028_r_payroll_export",
+    "principal_type": "user",
+    "principal_id": "u028",
+    "role_id": "r_payroll_export",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u029_r_iam_admin",
+    "principal_type": "user",
+    "principal_id": "u029",
+    "role_id": "r_iam_admin",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_u030_r_developer",
+    "principal_type": "user",
+    "principal_id": "u030",
+    "role_id": "r_developer",
+    "scope": "tenant",
+    "assignment_type": "direct"
+  },
+  {
+    "binding_id": "b_g_helpdesk_r_helpdesk",
+    "principal_type": "group",
+    "principal_id": "g_helpdesk",
+    "role_id": "r_helpdesk",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_helpdesk_nested_r_helpdesk",
+    "principal_type": "group",
+    "principal_id": "g_helpdesk_nested",
+    "role_id": "r_helpdesk",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_it_ops_r_sysadmin",
+    "principal_type": "group",
+    "principal_id": "g_it_ops",
+    "role_id": "r_sysadmin",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_priv_admins_r_global_admin",
+    "principal_type": "group",
+    "principal_id": "g_priv_admins",
+    "role_id": "r_global_admin",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_iam_admins_r_iam_admin",
+    "principal_type": "group",
+    "principal_id": "g_iam_admins",
+    "role_id": "r_iam_admin",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_finance_r_finance_reader",
+    "principal_type": "group",
+    "principal_id": "g_finance",
+    "role_id": "r_finance_reader",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_hr_r_hr_reader",
+    "principal_type": "group",
+    "principal_id": "g_hr",
+    "role_id": "r_hr_reader",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_developers_r_developer",
+    "principal_type": "group",
+    "principal_id": "g_developers",
+    "role_id": "r_developer",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_cloud_admins_r_cloud_storage_admin",
+    "principal_type": "group",
+    "principal_id": "g_cloud_admins",
+    "role_id": "r_cloud_storage_admin",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_contractors_r_contractor_export",
+    "principal_type": "group",
+    "principal_id": "g_contractors",
+    "role_id": "r_contractor_export",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_service_accounts_r_service_operator",
+    "principal_type": "group",
+    "principal_id": "g_service_accounts",
+    "role_id": "r_service_operator",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_soc_r_security_reader",
+    "principal_type": "group",
+    "principal_id": "g_soc",
+    "role_id": "r_security_reader",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_clinical_apps_r_hr_reader",
+    "principal_type": "group",
+    "principal_id": "g_clinical_apps",
+    "role_id": "r_hr_reader",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_research_r_security_reader",
+    "principal_type": "group",
+    "principal_id": "g_research",
+    "role_id": "r_security_reader",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_interns_r_intern_boundary",
+    "principal_type": "group",
+    "principal_id": "g_interns",
+    "role_id": "r_intern_boundary",
+    "scope": "tenant",
+    "assignment_type": "group"
+  },
+  {
+    "binding_id": "b_g_backup_admins_r_backup_admin",
+    "principal_type": "group",
+    "principal_id": "g_backup_admins",
+    "role_id": "r_backup_admin",
+    "scope": "tenant",
+    "assignment_type": "group"
+  }
+]

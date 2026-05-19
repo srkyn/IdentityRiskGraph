@@ -1,0 +1,306 @@
+[
+  {
+    "role_id": "r_helpdesk",
+    "name": "Helpdesk Operator",
+    "cloud": "Entra",
+    "privilege_level": 3,
+    "permissions": [
+      "read_user",
+      "reset_password",
+      "read_group",
+      "read_device",
+      "read_ticket",
+      "update_ticket"
+    ],
+    "sensitive_actions": [
+      "disable_user"
+    ],
+    "description": "Tier 1 user support and endpoint triage.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_sysadmin",
+    "name": "Senior Systems Administrator",
+    "cloud": "Hybrid",
+    "privilege_level": 7,
+    "permissions": [
+      "read_user",
+      "update_user",
+      "read_group",
+      "add_group_member",
+      "read_device",
+      "quarantine_device",
+      "read_logs",
+      "restore_backup",
+      "read_backup"
+    ],
+    "sensitive_actions": [
+      "disable_user",
+      "remove_group_member"
+    ],
+    "description": "Hospital systems administration role.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_iam_admin",
+    "name": "IAM Administrator",
+    "cloud": "Entra",
+    "privilege_level": 8,
+    "permissions": [
+      "read_user",
+      "create_user",
+      "update_user",
+      "read_group",
+      "create_group",
+      "update_group",
+      "add_group_member",
+      "remove_group_member",
+      "read_role",
+      "read_iam_policy"
+    ],
+    "sensitive_actions": [
+      "assign_role",
+      "remove_role",
+      "write_iam_policy"
+    ],
+    "description": "Identity governance and access management.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_global_admin",
+    "name": "Global Admin Role",
+    "cloud": "Entra",
+    "privilege_level": 10,
+    "permissions": [
+      "read_user",
+      "create_user",
+      "update_user",
+      "delete_user",
+      "disable_user",
+      "read_group",
+      "create_group",
+      "update_group",
+      "delete_group",
+      "add_group_member",
+      "remove_group_member",
+      "read_role",
+      "assign_role",
+      "remove_role",
+      "read_iam_policy",
+      "write_iam_policy"
+    ],
+    "sensitive_actions": [
+      "delete_user",
+      "assign_role",
+      "write_iam_policy",
+      "impersonate_service_account"
+    ],
+    "description": "Tenant-wide privileged administrator.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_finance_reader",
+    "name": "Finance Reader",
+    "cloud": "SaaS",
+    "privilege_level": 2,
+    "permissions": [
+      "read_finance",
+      "approve_invoice"
+    ],
+    "sensitive_actions": [],
+    "description": "Finance application read and invoice approval.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_payroll_export",
+    "name": "Payroll Exporter",
+    "cloud": "SaaS",
+    "privilege_level": 6,
+    "permissions": [
+      "read_finance",
+      "read_hr_records"
+    ],
+    "sensitive_actions": [
+      "export_payroll",
+      "download_bulk"
+    ],
+    "description": "Payroll export role for HR and finance reconciliation.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_hr_reader",
+    "name": "HR Records Reader",
+    "cloud": "SaaS",
+    "privilege_level": 4,
+    "permissions": [
+      "read_hr_records",
+      "read_user"
+    ],
+    "sensitive_actions": [
+      "export_hr_records"
+    ],
+    "description": "HR record access.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_developer",
+    "name": "Application Developer",
+    "cloud": "AWS",
+    "privilege_level": 4,
+    "permissions": [
+      "read_source_code",
+      "write_source_code",
+      "read_logs",
+      "read_vulnerability"
+    ],
+    "sensitive_actions": [
+      "deploy_prod"
+    ],
+    "description": "Developer access to source and deployment pipeline.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_cloud_storage_admin",
+    "name": "Cloud Storage Admin",
+    "cloud": "AWS",
+    "privilege_level": 7,
+    "permissions": [
+      "read_cloud_storage",
+      "write_cloud_storage",
+      "read_database"
+    ],
+    "sensitive_actions": [
+      "delete_cloud_storage",
+      "export_database",
+      "download_bulk"
+    ],
+    "description": "Cloud storage administration.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_security_reader",
+    "name": "Security Reader",
+    "cloud": "Hybrid",
+    "privilege_level": 3,
+    "permissions": [
+      "read_audit_log",
+      "read_logs",
+      "read_vulnerability",
+      "read_endpoint_health"
+    ],
+    "sensitive_actions": [
+      "export_logs"
+    ],
+    "description": "SOC read-only investigation role.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_service_operator",
+    "name": "Service Account Operator",
+    "cloud": "GCP",
+    "privilege_level": 6,
+    "permissions": [
+      "read_service_account",
+      "update_service_account",
+      "read_logs"
+    ],
+    "sensitive_actions": [
+      "impersonate_service_account",
+      "rotate_keys"
+    ],
+    "description": "Service account lifecycle operations.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_break_glass",
+    "name": "Break Glass Emergency Admin",
+    "cloud": "Entra",
+    "privilege_level": 10,
+    "permissions": [
+      "read_user",
+      "update_user",
+      "delete_user",
+      "read_group",
+      "assign_role",
+      "read_iam_policy",
+      "write_iam_policy"
+    ],
+    "sensitive_actions": [
+      "delete_user",
+      "assign_role",
+      "write_iam_policy"
+    ],
+    "description": "Emergency-only account role.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_contractor_export",
+    "name": "Contractor Data Export",
+    "cloud": "GCP",
+    "privilege_level": 6,
+    "permissions": [
+      "read_sensitive_resource",
+      "read_cloud_storage"
+    ],
+    "sensitive_actions": [
+      "export_phi",
+      "download_bulk"
+    ],
+    "description": "Temporary analytics export role.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  },
+  {
+    "role_id": "r_intern_boundary",
+    "name": "Intern Bounded Analyst",
+    "cloud": "AWS",
+    "privilege_level": 5,
+    "permissions": [
+      "read_finance",
+      "read_sensitive_resource",
+      "export_payroll",
+      "download_bulk"
+    ],
+    "sensitive_actions": [
+      "export_payroll"
+    ],
+    "deny_permissions": [
+      "delete_user"
+    ],
+    "permissions_boundary": [
+      "read_finance",
+      "read_sensitive_resource"
+    ],
+    "description": "Intern role constrained by maximum-permission boundary."
+  },
+  {
+    "role_id": "r_backup_admin",
+    "name": "Backup Administrator",
+    "cloud": "Hybrid",
+    "privilege_level": 7,
+    "permissions": [
+      "read_backup",
+      "restore_backup",
+      "read_database"
+    ],
+    "sensitive_actions": [
+      "delete_backup",
+      "export_database"
+    ],
+    "description": "Backup platform administrator.",
+    "deny_permissions": [],
+    "permissions_boundary": []
+  }
+]

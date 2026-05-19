@@ -1,0 +1,44 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {"type": "IAMUser", "userName": "admin.user@example.com", "arn": "arn:aws:iam::111122223333:user/admin.user@example.com"},
+      "eventTime": "2026-05-18T09:01:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.45",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {"userName": "john.contractor@example.com", "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"},
+      "recipientAccountId": "111122223333",
+      "eventID": "ct-susp-0001"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {"type": "IAMUser", "userName": "admin.user@example.com", "arn": "arn:aws:iam::111122223333:user/admin.user@example.com"},
+      "eventTime": "2026-05-18T09:04:00Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "StopLogging",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.45",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {"name": "org-management-trail"},
+      "recipientAccountId": "111122223333",
+      "eventID": "ct-susp-0002"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {"type": "IAMUser", "userName": "caleb.stone@vendor.example", "arn": "arn:aws:iam::111122223333:user/caleb.stone@vendor.example"},
+      "eventTime": "2026-05-18T09:06:00Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.80",
+      "userAgent": "aws-cli/2.15.0",
+      "requestParameters": {"roleArn": "arn:aws:iam::111122223333:role/ProductionAdmin", "roleSessionName": "vendor-maintenance"},
+      "recipientAccountId": "111122223333",
+      "eventID": "ct-susp-0003"
+    }
+  ]
+}
+

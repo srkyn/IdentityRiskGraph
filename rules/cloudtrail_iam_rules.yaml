@@ -1,0 +1,71 @@
+rules:
+  - id: admin_policy_attached_user
+    name: AdministratorAccess Attached To User
+    eventName: AttachUserPolicy
+    severity: High
+    match_fields:
+      requestParameters.policyArn: AdministratorAccess
+    reason_template: "{target_identity} was granted AdministratorAccess directly."
+    recommended_action: Review policy attachment, validate change ticket, and confirm business justification.
+    mitre_technique: T1098 Account Manipulation
+    risk_score_delta: 24
+  - id: user_added_privileged_group
+    name: User Added To Privileged Group
+    eventName: AddUserToGroup
+    severity: High
+    match_fields:
+      requestParameters.groupName:
+        - admins
+        - administrators
+        - security-admins
+        - iam-admins
+        - break-glass-admins
+    reason_template: "{target_identity} was added to privileged group {groupName}."
+    recommended_action: Validate approval, review group privileges, and confirm the actor normally manages access.
+    mitre_technique: T1098.003 Additional Cloud Roles
+    risk_score_delta: 22
+  - id: cloudtrail_logging_stopped
+    name: CloudTrail Logging Stopped
+    eventName: StopLogging
+    severity: Critical
+    match_fields: {}
+    reason_template: CloudTrail logging was stopped for {trailName}, reducing control-plane visibility.
+    recommended_action: Re-enable logging, preserve available logs, and investigate actor activity before and after the event.
+    mitre_technique: T1562.008 Disable Cloud Logs
+    risk_score_delta: 34
+  - id: trail_deleted
+    name: CloudTrail Trail Deleted
+    eventName: DeleteTrail
+    severity: Critical
+    match_fields: {}
+    reason_template: CloudTrail trail {trailName} was deleted.
+    recommended_action: Restore logging, check organization trails, and escalate as potential defense evasion.
+    mitre_technique: T1562.008 Disable Cloud Logs
+    risk_score_delta: 36
+  - id: access_key_created_non_service_user
+    name: Access Key Created For Non-Service User
+    eventName: CreateAccessKey
+    severity: Medium
+    match_fields: {}
+    reason_template: Long-lived access key was created for {target_identity}.
+    recommended_action: Confirm key owner, rotate if unauthorized, and prefer role-based temporary credentials.
+    mitre_technique: T1098.001 Additional Cloud Credentials
+    risk_score_delta: 14
+  - id: login_profile_created
+    name: Login Profile Created
+    eventName: CreateLoginProfile
+    severity: Medium
+    match_fields: {}
+    reason_template: Console login profile was created for {target_identity}.
+    recommended_action: Confirm console access is approved and disable the login profile if unnecessary.
+    mitre_technique: T1098 Account Manipulation
+    risk_score_delta: 12
+  - id: inline_user_policy_created
+    name: Inline Policy Created For User
+    eventName: PutUserPolicy
+    severity: High
+    match_fields: {}
+    reason_template: Inline IAM policy was created directly on {target_identity}.
+    recommended_action: Inspect policy document, compare to approved role model, and remove direct inline grants if unnecessary.
+    mitre_technique: T1098 Account Manipulation
+    risk_score_delta: 20

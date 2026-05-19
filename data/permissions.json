@@ -1,0 +1,422 @@
+[
+  {
+    "permission_id": "read_user",
+    "name": "Read User",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows read user in simulated enterprise systems."
+  },
+  {
+    "permission_id": "create_user",
+    "name": "Create User",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows create user in simulated enterprise systems."
+  },
+  {
+    "permission_id": "update_user",
+    "name": "Update User",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows update user in simulated enterprise systems."
+  },
+  {
+    "permission_id": "delete_user",
+    "name": "Delete User",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows delete user in simulated enterprise systems."
+  },
+  {
+    "permission_id": "disable_user",
+    "name": "Disable User",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows disable user in simulated enterprise systems."
+  },
+  {
+    "permission_id": "reset_password",
+    "name": "Reset Password",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows reset password in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_group",
+    "name": "Read Group",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows read group in simulated enterprise systems."
+  },
+  {
+    "permission_id": "create_group",
+    "name": "Create Group",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows create group in simulated enterprise systems."
+  },
+  {
+    "permission_id": "update_group",
+    "name": "Update Group",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows update group in simulated enterprise systems."
+  },
+  {
+    "permission_id": "delete_group",
+    "name": "Delete Group",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows delete group in simulated enterprise systems."
+  },
+  {
+    "permission_id": "add_group_member",
+    "name": "Add Group Member",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows add group member in simulated enterprise systems."
+  },
+  {
+    "permission_id": "remove_group_member",
+    "name": "Remove Group Member",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows remove group member in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_role",
+    "name": "Read Role",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows read role in simulated enterprise systems."
+  },
+  {
+    "permission_id": "assign_role",
+    "name": "Assign Role",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows assign role in simulated enterprise systems."
+  },
+  {
+    "permission_id": "remove_role",
+    "name": "Remove Role",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows remove role in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_audit_log",
+    "name": "Read Audit Log",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read audit log in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_audit_log",
+    "name": "Export Audit Log",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export audit log in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_device",
+    "name": "Read Device",
+    "category": "Data",
+    "sensitivity": "Low",
+    "description": "Allows read device in simulated enterprise systems."
+  },
+  {
+    "permission_id": "quarantine_device",
+    "name": "Quarantine Device",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows quarantine device in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_endpoint_health",
+    "name": "Read Endpoint Health",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read endpoint health in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_phi",
+    "name": "Read Phi",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows read phi in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_phi",
+    "name": "Export Phi",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export phi in simulated enterprise systems."
+  },
+  {
+    "permission_id": "download_phi_bulk",
+    "name": "Download Phi Bulk",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows download phi bulk in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_finance",
+    "name": "Read Finance",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read finance in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_payroll",
+    "name": "Export Payroll",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export payroll in simulated enterprise systems."
+  },
+  {
+    "permission_id": "approve_invoice",
+    "name": "Approve Invoice",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows approve invoice in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_hr_records",
+    "name": "Read Hr Records",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read hr records in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_hr_records",
+    "name": "Export Hr Records",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export hr records in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_source_code",
+    "name": "Read Source Code",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read source code in simulated enterprise systems."
+  },
+  {
+    "permission_id": "write_source_code",
+    "name": "Write Source Code",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows write source code in simulated enterprise systems."
+  },
+  {
+    "permission_id": "deploy_prod",
+    "name": "Deploy Prod",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows deploy prod in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_secrets",
+    "name": "Read Secrets",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows read secrets in simulated enterprise systems."
+  },
+  {
+    "permission_id": "write_secrets",
+    "name": "Write Secrets",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows write secrets in simulated enterprise systems."
+  },
+  {
+    "permission_id": "rotate_keys",
+    "name": "Rotate Keys",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows rotate keys in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_cloud_storage",
+    "name": "Read Cloud Storage",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read cloud storage in simulated enterprise systems."
+  },
+  {
+    "permission_id": "write_cloud_storage",
+    "name": "Write Cloud Storage",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows write cloud storage in simulated enterprise systems."
+  },
+  {
+    "permission_id": "delete_cloud_storage",
+    "name": "Delete Cloud Storage",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows delete cloud storage in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_database",
+    "name": "Read Database",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read database in simulated enterprise systems."
+  },
+  {
+    "permission_id": "write_database",
+    "name": "Write Database",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows write database in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_database",
+    "name": "Export Database",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export database in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_service_account",
+    "name": "Read Service Account",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows read service account in simulated enterprise systems."
+  },
+  {
+    "permission_id": "create_service_account",
+    "name": "Create Service Account",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows create service account in simulated enterprise systems."
+  },
+  {
+    "permission_id": "update_service_account",
+    "name": "Update Service Account",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows update service account in simulated enterprise systems."
+  },
+  {
+    "permission_id": "delete_service_account",
+    "name": "Delete Service Account",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows delete service account in simulated enterprise systems."
+  },
+  {
+    "permission_id": "impersonate_service_account",
+    "name": "Impersonate Service Account",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows impersonate service account in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_iam_policy",
+    "name": "Read Iam Policy",
+    "category": "Identity",
+    "sensitivity": "Medium",
+    "description": "Allows read iam policy in simulated enterprise systems."
+  },
+  {
+    "permission_id": "write_iam_policy",
+    "name": "Write Iam Policy",
+    "category": "Identity",
+    "sensitivity": "High",
+    "description": "Allows write iam policy in simulated enterprise systems."
+  },
+  {
+    "permission_id": "deny_policy_bypass_attempt",
+    "name": "Deny Policy Bypass Attempt",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows deny policy bypass attempt in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_logs",
+    "name": "Read Logs",
+    "category": "Data",
+    "sensitivity": "Low",
+    "description": "Allows read logs in simulated enterprise systems."
+  },
+  {
+    "permission_id": "export_logs",
+    "name": "Export Logs",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows export logs in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_ticket",
+    "name": "Read Ticket",
+    "category": "Data",
+    "sensitivity": "Low",
+    "description": "Allows read ticket in simulated enterprise systems."
+  },
+  {
+    "permission_id": "update_ticket",
+    "name": "Update Ticket",
+    "category": "Data",
+    "sensitivity": "Low",
+    "description": "Allows update ticket in simulated enterprise systems."
+  },
+  {
+    "permission_id": "close_ticket",
+    "name": "Close Ticket",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows close ticket in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_vulnerability",
+    "name": "Read Vulnerability",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read vulnerability in simulated enterprise systems."
+  },
+  {
+    "permission_id": "update_vulnerability",
+    "name": "Update Vulnerability",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows update vulnerability in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_backup",
+    "name": "Read Backup",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read backup in simulated enterprise systems."
+  },
+  {
+    "permission_id": "restore_backup",
+    "name": "Restore Backup",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows restore backup in simulated enterprise systems."
+  },
+  {
+    "permission_id": "delete_backup",
+    "name": "Delete Backup",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows delete backup in simulated enterprise systems."
+  },
+  {
+    "permission_id": "read_sensitive_resource",
+    "name": "Read Sensitive Resource",
+    "category": "Data",
+    "sensitivity": "Medium",
+    "description": "Allows read sensitive resource in simulated enterprise systems."
+  },
+  {
+    "permission_id": "download_bulk",
+    "name": "Download Bulk",
+    "category": "Data",
+    "sensitivity": "High",
+    "description": "Allows download bulk in simulated enterprise systems."
+  }
+]

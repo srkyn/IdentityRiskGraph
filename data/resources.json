@@ -1,0 +1,122 @@
+[
+  {
+    "resource_id": "res_ehr",
+    "name": "Epic EHR Patient Records",
+    "type": "phi",
+    "cloud": "Azure",
+    "sensitivity": "Restricted",
+    "owner_department": "Clinical"
+  },
+  {
+    "resource_id": "res_payroll",
+    "name": "Payroll Export Share",
+    "type": "finance",
+    "cloud": "SaaS",
+    "sensitivity": "Restricted",
+    "owner_department": "Finance"
+  },
+  {
+    "resource_id": "res_hr",
+    "name": "HR Personnel Records",
+    "type": "hr",
+    "cloud": "SaaS",
+    "sensitivity": "Restricted",
+    "owner_department": "HR"
+  },
+  {
+    "resource_id": "res_audit",
+    "name": "Identity Audit Logs",
+    "type": "logs",
+    "cloud": "Entra",
+    "sensitivity": "Confidential",
+    "owner_department": "Security"
+  },
+  {
+    "resource_id": "res_src",
+    "name": "Clinical App Source Repo",
+    "type": "source",
+    "cloud": "AWS",
+    "sensitivity": "Confidential",
+    "owner_department": "Engineering"
+  },
+  {
+    "resource_id": "res_prod",
+    "name": "Production Deployment Pipeline",
+    "type": "pipeline",
+    "cloud": "AWS",
+    "sensitivity": "Restricted",
+    "owner_department": "Engineering"
+  },
+  {
+    "resource_id": "res_secrets",
+    "name": "Secrets Vault",
+    "type": "secrets",
+    "cloud": "AWS",
+    "sensitivity": "Restricted",
+    "owner_department": "Security"
+  },
+  {
+    "resource_id": "res_storage",
+    "name": "Cloud Object Storage",
+    "type": "storage",
+    "cloud": "GCP",
+    "sensitivity": "Restricted",
+    "owner_department": "Research"
+  },
+  {
+    "resource_id": "res_db",
+    "name": "Clinical Reporting Database",
+    "type": "database",
+    "cloud": "Azure",
+    "sensitivity": "Restricted",
+    "owner_department": "Clinical"
+  },
+  {
+    "resource_id": "res_backup",
+    "name": "Backup Vault",
+    "type": "backup",
+    "cloud": "Hybrid",
+    "sensitivity": "Restricted",
+    "owner_department": "IT"
+  },
+  {
+    "resource_id": "res_tickets",
+    "name": "Service Desk Tickets",
+    "type": "ticket",
+    "cloud": "SaaS",
+    "sensitivity": "Internal",
+    "owner_department": "IT"
+  },
+  {
+    "resource_id": "res_vuln",
+    "name": "Vulnerability Console",
+    "type": "vulnerability",
+    "cloud": "SaaS",
+    "sensitivity": "Confidential",
+    "owner_department": "Security"
+  },
+  {
+    "resource_id": "res_devices",
+    "name": "Endpoint Management",
+    "type": "endpoint",
+    "cloud": "Entra",
+    "sensitivity": "Confidential",
+    "owner_department": "IT"
+  },
+  {
+    "resource_id": "res_iam",
+    "name": "IAM Control Plane",
+    "type": "iam",
+    "cloud": "Entra",
+    "sensitivity": "Restricted",
+    "owner_department": "Security"
+  },
+  {
+    "resource_id": "res_finance",
+    "name": "Finance Reporting App",
+    "type": "finance",
+    "cloud": "SaaS",
+    "sensitivity": "Confidential",
+    "owner_department": "Finance"
+  }
+]

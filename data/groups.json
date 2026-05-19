@@ -1,0 +1,278 @@
+[
+  {
+    "group_id": "g_helpdesk",
+    "name": "Helpdesk Team",
+    "description": "Tier 1 support users.",
+    "members": [
+      "u001",
+      "u010"
+    ],
+    "nested_groups": [
+      "g_it_ops"
+    ],
+    "assigned_roles": [
+      "r_helpdesk"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u002"
+  },
+  {
+    "group_id": "g_helpdesk_nested",
+    "name": "Helpdesk Team - Legacy Nested",
+    "description": "Legacy helpdesk group still nested into IT operations.",
+    "members": [
+      "u017"
+    ],
+    "nested_groups": [
+      "g_helpdesk"
+    ],
+    "assigned_roles": [
+      "r_helpdesk"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u002"
+  },
+  {
+    "group_id": "g_it_ops",
+    "name": "IT Operations Nested Group",
+    "description": "Operations group nested into privileged admins for legacy maintenance.",
+    "members": [
+      "u021"
+    ],
+    "nested_groups": [
+      "g_priv_admins"
+    ],
+    "assigned_roles": [
+      "r_sysadmin"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u004"
+  },
+  {
+    "group_id": "g_priv_admins",
+    "name": "Privileged Admin Group",
+    "description": "Role-assignable group with global admin.",
+    "members": [
+      "u004"
+    ],
+    "nested_groups": [],
+    "assigned_roles": [
+      "r_global_admin"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u004"
+  },
+  {
+    "group_id": "g_iam_admins",
+    "name": "IAM Admins",
+    "description": "Identity governance administrators.",
+    "members": [
+      "u003",
+      "u029"
+    ],
+    "nested_groups": [
+      "g_priv_admins"
+    ],
+    "assigned_roles": [
+      "r_iam_admin"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u004"
+  },
+  {
+    "group_id": "g_finance",
+    "name": "Finance Users",
+    "description": "Finance and payroll business users.",
+    "members": [
+      "u005",
+      "u011",
+      "u015",
+      "u028"
+    ],
+    "nested_groups": [],
+    "assigned_roles": [
+      "r_finance_reader"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u015"
+  },
+  {
+    "group_id": "g_hr",
+    "name": "HR Users",
+    "description": "Human resources users.",
+    "members": [
+      "u006",
+      "u016"
+    ],
+    "nested_groups": [],
+    "assigned_roles": [
+      "r_hr_reader"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u016"
+  },
+  {
+    "group_id": "g_developers",
+    "name": "Application Developers",
+    "description": "Application engineering group.",
+    "members": [
+      "u007",
+      "u014",
+      "u030"
+    ],
+    "nested_groups": [
+      "g_cloud_admins"
+    ],
+    "assigned_roles": [
+      "r_developer"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u014"
+  },
+  {
+    "group_id": "g_cloud_admins",
+    "name": "Cloud Platform Admins",
+    "description": "Cloud data and storage administrators.",
+    "members": [
+      "u026",
+      "u030"
+    ],
+    "nested_groups": [],
+    "assigned_roles": [
+      "r_cloud_storage_admin"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u026"
+  },
+  {
+    "group_id": "g_contractors",
+    "name": "Contractor Analytics Access",
+    "description": "Contractors with temporary analytics export access.",
+    "members": [
+      "u008",
+      "u027"
+    ],
+    "nested_groups": [
+      "g_finance"
+    ],
+    "assigned_roles": [
+      "r_contractor_export"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u020"
+  },
+  {
+    "group_id": "g_service_accounts",
+    "name": "Service Accounts",
+    "description": "Automation identities.",
+    "members": [
+      "u012"
+    ],
+    "nested_groups": [],
+    "assigned_roles": [
+      "r_service_operator"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": false,
+    "owner": "u002"
+  },
+  {
+    "group_id": "g_soc",
+    "name": "SOC Analysts",
+    "description": "Security operations readers.",
+    "members": [
+      "u019",
+      "u026"
+    ],
+    "nested_groups": [
+      "g_iam_admins"
+    ],
+    "assigned_roles": [
+      "r_security_reader"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u003"
+  },
+  {
+    "group_id": "g_clinical_apps",
+    "name": "Clinical Application Users",
+    "description": "Clinical application access group.",
+    "members": [
+      "u009",
+      "u022",
+      "u024"
+    ],
+    "nested_groups": [
+      "g_hr"
+    ],
+    "assigned_roles": [
+      "r_hr_reader"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u024"
+  },
+  {
+    "group_id": "g_research",
+    "name": "Research Data Access",
+    "description": "Research users with de-identified data access.",
+    "members": [
+      "u018",
+      "u020"
+    ],
+    "nested_groups": [
+      "g_contractors"
+    ],
+    "assigned_roles": [
+      "r_security_reader"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u020"
+  },
+  {
+    "group_id": "g_interns",
+    "name": "Intern Analysts",
+    "description": "Bounded intern analytics access.",
+    "members": [
+      "u023"
+    ],
+    "nested_groups": [
+      "g_finance"
+    ],
+    "assigned_roles": [
+      "r_intern_boundary"
+    ],
+    "is_privileged": false,
+    "is_role_assignable": false,
+    "owner": "u019"
+  },
+  {
+    "group_id": "g_backup_admins",
+    "name": "Backup Admins",
+    "description": "Backup operations administrators.",
+    "members": [
+      "u025"
+    ],
+    "nested_groups": [
+      "g_it_ops"
+    ],
+    "assigned_roles": [
+      "r_backup_admin"
+    ],
+    "is_privileged": true,
+    "is_role_assignable": true,
+    "owner": "u002"
+  }
+]
