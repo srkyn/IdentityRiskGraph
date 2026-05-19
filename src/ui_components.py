@@ -15,13 +15,16 @@ def apply_theme() -> None:
         :root { --bg:#07111f; --panel:#0d1b2f; --panel2:#10243d; --border:#1e3a5f; --text:#e5eefb; --muted:#92a4bd; --cyan:#5eead4; --rose:#fb7185; --amber:#f59e0b; --blue:#60a5fa; }
         .stApp { background: radial-gradient(circle at top left, rgba(94,234,212,.08), transparent 34%), #07111f; color: var(--text); }
         section[data-testid="stSidebar"] { background: #081523; border-right: 1px solid var(--border); }
+        section[data-testid="stSidebar"] * { color: #c7d6ea !important; }
+        section[data-testid="stSidebar"] label p { color: #dce8f8 !important; font-weight: 520; }
+        section[data-testid="stSidebar"] strong { color: #f8fbff !important; }
         h1, h2, h3 { letter-spacing: 0; }
         .irg-title { display:flex; align-items:center; gap:14px; padding: 10px 0 4px; }
         .irg-mark { width:38px; height:38px; border-radius:8px; background: linear-gradient(135deg,#5eead4,#60a5fa); color:#06101d; display:grid; place-items:center; font-weight:900; }
         .irg-subtitle { color: var(--muted); margin-top:-8px; }
         .kpi-card { background: linear-gradient(180deg, rgba(16,36,61,.96), rgba(13,27,47,.96)); border:1px solid var(--border); border-radius:8px; padding:16px; min-height:108px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
         .kpi-label { color: var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
-        .kpi-value { font-size:30px; font-weight:800; margin-top:8px; }
+        .kpi-value { font-size:30px; font-weight:800; margin-top:8px; line-height:1.25; overflow-wrap:anywhere; }
         .sev-Critical,.band-Critical { color:#fecdd3; background:rgba(244,63,94,.22); border:1px solid rgba(244,63,94,.4); padding:3px 8px; border-radius:999px; font-weight:700; }
         .sev-High,.band-High { color:#fed7aa; background:rgba(245,158,11,.20); border:1px solid rgba(245,158,11,.38); padding:3px 8px; border-radius:999px; font-weight:700; }
         .sev-Medium,.band-Medium { color:#bfdbfe; background:rgba(96,165,250,.18); border:1px solid rgba(96,165,250,.34); padding:3px 8px; border-radius:999px; font-weight:700; }
@@ -68,4 +71,3 @@ def bar_chart(df: pd.DataFrame, x: str, y: str, color: str | None = None, title:
     fig = px.bar(df, x=x, y=y, color=color, title=title, template="plotly_dark", color_discrete_sequence=["#5eead4", "#60a5fa", "#f59e0b", "#fb7185"])
     fig.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(7,17,31,.6)", font_color="#e5eefb")
     st.plotly_chart(fig, use_container_width=True)
-

@@ -278,7 +278,9 @@ def user_investigation(data: dict) -> None:
     st.subheader("User Investigation")
     st.caption("Analyst case view: profile, risk factors, access paths, recent activity, findings, and notes.")
     users_by_name = {user.display_name: user for user in data["users"]}
-    selected = st.selectbox("Select identity", sorted(users_by_name))
+    names = sorted(users_by_name)
+    default_index = names.index("Caleb Stone") if "Caleb Stone" in names else 0
+    selected = st.selectbox("Select identity", names, index=default_index)
     user = users_by_name[selected]
     risk = data["risks"][user.user_id]
     access = data["access"][user.user_id]
@@ -294,6 +296,7 @@ def user_investigation(data: dict) -> None:
 
     st.markdown(f"### Case: {user.display_name}")
     st.write(f"**{user.job_title}** in **{user.department}** | `{user.user_type}` | Status: `{user.status}`")
+    st.info("Demo tip: Caleb Stone shows contractor risk plus CloudTrail IAM findings. David User shows nested group privilege inheritance.")
 
     st.subheader("Risk Breakdown")
     st.dataframe(pd.DataFrame([asdict(factor) for factor in risk.factors]), use_container_width=True, hide_index=True)

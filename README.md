@@ -177,6 +177,8 @@ Every user has a factor breakdown showing what added points and why. Example fac
 6. Use **Identity Graph** to inspect how access is inherited.
 7. Export findings as CSV, JSON, Markdown, or Splunk-friendly JSON.
 
+For a presenter-friendly walkthrough, see [docs/demo_walkthrough.md](docs/demo_walkthrough.md).
+
 ## Project Structure
 
 ```text

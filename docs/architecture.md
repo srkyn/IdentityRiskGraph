@@ -2,6 +2,8 @@
 
 IdentityRiskGraph is a local-only defensive simulation. It does not connect to production identity providers, cloud APIs, or real tenant data.
 
+The project is intentionally split into a terminal-first detector and an investigation dashboard. That makes it usable as both a command-line detection engineering artifact and a SOC-style portfolio demo.
+
 ## Pipeline
 
 ```mermaid
