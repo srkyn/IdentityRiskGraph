@@ -5,6 +5,7 @@
 ![pytest](https://img.shields.io/badge/tests-pytest-green)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
 ![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail_IAM-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 **Identity-first detection engineering for AWS IAM, nested access paths, and SOC-style risk investigation.**
 
@@ -109,6 +110,7 @@ python -m streamlit run app.py
 - Detection-as-code foundation in `rules/cloudtrail_iam_rules.yaml`
 - Optional YAML detection engine for simple CloudTrail IAM rule execution
 - Splunk-friendly JSON export
+- GitHub REST API adapter for public repository context and review notes
 - Pytest suite and GitHub Actions CI
 
 ## Architecture
@@ -236,6 +238,14 @@ python cloudtrail_detector.py --file data/cloudtrail/suspicious_cloudtrail_event
 python cloudtrail_detector.py --engine yaml --file data/cloudtrail/suspicious_cloudtrail_events.json
 ```
 
+Fetch public GitHub repository context:
+
+```powershell
+python -m src.github_repo_context srkyn/IdentityRiskGraph
+```
+
+This optional adapter reads public GitHub REST API metadata and prints review notes for repository visibility, maintenance state, topics, issue workflow, and licensing. See [docs/github_api_integration.md](docs/github_api_integration.md).
+
 Makefile shortcuts:
 
 ```bash
@@ -243,6 +253,7 @@ make install
 make test
 make run
 make cloudtrail-demo
+make github-context
 ```
 
 ## Tests

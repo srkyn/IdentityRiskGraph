@@ -10,3 +10,5 @@ run:
 cloudtrail-demo:
 	python cloudtrail_detector.py --file data/cloudtrail/sample_cloudtrail_iam_events.json
 
+github-context:
+	python -m src.github_repo_context srkyn/IdentityRiskGraph
