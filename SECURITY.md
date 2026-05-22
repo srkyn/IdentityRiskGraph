@@ -1,6 +1,6 @@
 # Security Policy
 
-IdentityRiskGraph is a defensive portfolio project that uses simulated identity data, sample CloudTrail-style events, and optional public GitHub repository metadata.
+IdentityRiskGraph is a defensive security project that uses simulated identity data, sample CloudTrail-style events, and optional public GitHub repository metadata.
 
 ## Reporting
 

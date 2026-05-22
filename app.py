@@ -62,7 +62,7 @@ def main() -> None:
 
     st.sidebar.markdown(
         """
-        **Demo Flow**
+        **Review Flow**
 
         1. Start with **CloudTrail IAM Detections**.
         2. Open a high-severity finding.
@@ -75,7 +75,7 @@ def main() -> None:
     page = st.sidebar.radio(
         "Workspace",
         [
-            "Executive Overview",
+            "Overview",
             "Risky Identities",
             "Detection Findings",
             "CloudTrail IAM Detections",
@@ -87,7 +87,7 @@ def main() -> None:
         ],
     )
 
-    if page == "Executive Overview":
+    if page == "Overview":
         executive_overview(data)
     elif page == "Risky Identities":
         risky_identities(data)
@@ -108,7 +108,7 @@ def main() -> None:
 
 
 def executive_overview(data: dict) -> None:
-    st.subheader("Executive Overview")
+    st.subheader("Overview")
     st.caption("Identity risk, detection volume, and the highest-signal IAM conditions from the simulated environment.")
     risks = data["risks"]
     findings = data["findings"]
@@ -204,7 +204,7 @@ def detection_findings(data: dict) -> None:
 def cloudtrail_iam_detections(data: dict) -> None:
     findings = data["cloudtrail_findings"]
     st.subheader("CloudTrail IAM Detections")
-    st.caption("Raw CloudTrail-style IAM events are parsed first, alerted in the terminal, then normalized into dashboard-ready findings.")
+    st.caption("Raw CloudTrail-style IAM events are parsed first, alerted in the terminal, then normalized into reviewable findings.")
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         kpi("Loaded File", "Sample IAM Events")
@@ -343,7 +343,7 @@ def raw_events(data: dict) -> None:
 
 def exports_page(data: dict) -> None:
     st.subheader("Export / Reports")
-    st.write("Export investigation artifacts for ticketing, reporting, or portfolio review.")
+    st.write("Export investigation artifacts for ticketing, reporting, or review.")
     findings_df = findings_to_dataframe(data["findings"])
     risky_df = risky_identities_dataframe(data["users"], data["risks"], data["access"])
     st.download_button("Download all findings CSV", findings_df.to_csv(index=False), "identityriskgraph_findings.csv", "text/csv")

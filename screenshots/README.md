@@ -4,7 +4,7 @@ These are real captures from the local Streamlit dashboard and the terminal Clou
 
 | View | File |
 |---|---|
-| Executive Overview | `identityriskgraph-executive-overview.png` |
+| Overview | `identityriskgraph-executive-overview.png` |
 | CloudTrail IAM Detections | `identityriskgraph-cloudtrail-iam-detections.png` |
 | Risky Identities | `identityriskgraph-risky-identities.png` |
 | Detection Findings expanded detail | `identityriskgraph-detection-findings-expanded.png` |

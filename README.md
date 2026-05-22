@@ -7,27 +7,25 @@
 ![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail_IAM-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Identity-first detection engineering for AWS IAM, nested access paths, and SOC-style risk investigation.**
+**Identity-first detection engineering for AWS IAM, nested access paths, and reviewable security context.**
 
-IdentityRiskGraph starts with realistic CloudTrail IAM events, detects risky identity control-plane changes, resolves nested access paths, and turns noisy IAM activity into explainable risk scores and dashboard-ready investigations.
+IdentityRiskGraph starts with realistic CloudTrail IAM events, detects risky identity control-plane changes, resolves nested access paths, and turns noisy IAM activity into reviewable risk context.
 
 ![IdentityRiskGraph executive overview](screenshots/identityriskgraph-executive-overview.png)
 
-## Screenshots And Demo
+## Screenshots
 
 Real screenshots from the running app and terminal detector are stored in [screenshots/](screenshots/).
 
 | View | Screenshot |
 |---|---|
-| Executive Overview | ![Executive Overview](screenshots/identityriskgraph-executive-overview.png) |
+| Overview | ![Overview](screenshots/identityriskgraph-executive-overview.png) |
 | CloudTrail IAM Detections | ![CloudTrail IAM Detections](screenshots/identityriskgraph-cloudtrail-iam-detections.png) |
 | Risky Identities | ![Risky Identities](screenshots/identityriskgraph-risky-identities.png) |
 | Detection Finding Detail | ![Detection Findings Expanded](screenshots/identityriskgraph-detection-findings-expanded.png) |
 | User Investigation | ![User Investigation](screenshots/identityriskgraph-user-investigation.png) |
 | Identity Graph | ![Identity Graph](screenshots/identityriskgraph-identity-graph.png) |
 | Terminal Detector Output | ![Terminal Detector Output](screenshots/identityriskgraph-terminal-detector-output.png) |
-
-An optional future improvement is a short GIF walking from a CloudTrail finding into a user investigation.
 
 ## Why This Project Exists
 
@@ -79,7 +77,7 @@ python cloudtrail_detector.py --engine yaml --file data/cloudtrail/suspicious_cl
 
 ### 2. Streamlit Investigation Dashboard
 
-The dashboard combines CloudTrail findings with simulated enterprise IAM context, permission resolution, risk scoring, graph visualization, exports, and analyst notes.
+The dashboard combines CloudTrail findings with simulated enterprise IAM context, permission resolution, risk context, graph visualization, exports, and analyst notes.
 
 ```powershell
 python -m streamlit run app.py
@@ -94,8 +92,8 @@ python -m streamlit run app.py
 - Nested group and permission resolution
 - MITRE ATT&CK mapping
 - Streamlit dashboard development
-- SOC-style investigation workflow
-- Explainable risk scoring
+- Investigation workflow
+- Explainable risk context
 - Test coverage and documentation
 
 ## Features
@@ -285,20 +283,6 @@ The test suite covers:
 ## Skills Demonstrated
 
 Python, Streamlit, CloudTrail, AWS IAM, identity security, detection engineering, SOC investigation workflows, MITRE ATT&CK, risk modeling, graph analysis, JSON/YAML parsing, pytest, GitHub Actions, and technical documentation.
-
-## Resume Bullet
-
-Built IdentityRiskGraph, an identity-first detection engineering project that parses CloudTrail IAM logs, detects risky AWS control-plane activity, resolves nested enterprise access paths, maps findings to MITRE ATT&CK, exports Splunk-friendly events, and produces explainable risk scores in a Streamlit investigation dashboard.
-
-## LinkedIn Post
-
-I built IdentityRiskGraph, an identity-first detection engineering portfolio project.
-
-It starts with realistic AWS CloudTrail IAM events, detects risky control-plane changes like AdministratorAccess attachments, privileged group membership, access key creation, CloudTrail StopLogging/DeleteTrail, and suspicious AssumeRole activity, then feeds those findings into a Streamlit investigation dashboard.
-
-The dashboard adds nested permission resolution, explainable 0-100 risk scoring, MITRE mappings, identity graph visualization, analyst notes, and exports.
-
-The goal is practical: reduce noisy IAM alerts by adding identity context before scoring.
 
 ## Disclaimer
 

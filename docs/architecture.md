@@ -2,7 +2,7 @@
 
 IdentityRiskGraph is a local-only defensive simulation. It does not connect to production identity providers, cloud APIs, or real tenant data.
 
-The project is intentionally split into a terminal-first detector and an investigation dashboard. That makes it usable as both a command-line detection engineering artifact and a SOC-style portfolio demo.
+The project is intentionally split into a terminal-first detector and an investigation dashboard. That keeps the detection logic usable from the command line while preserving a reviewable investigation surface.
 
 ## Pipeline
 
@@ -36,7 +36,7 @@ flowchart TD
 6. **Detection Engine:** evaluates deterministic identity-aware rules.
 7. **Risk Engine:** converts identity context and findings into explainable 0-100 scores.
 8. **Graph Builder:** creates a NetworkX graph and PyVis visualization for users, groups, roles, permissions, and resources.
-9. **Dashboard:** exposes SOC-style workflows in Streamlit.
+9. **Dashboard:** exposes investigation workflows in Streamlit.
 10. **Exports:** produces CSV, JSON, and Markdown artifacts.
 
 ## Design Goal
