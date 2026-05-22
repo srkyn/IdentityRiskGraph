@@ -303,3 +303,5 @@ The goal is practical: reduce noisy IAM alerts by adding identity context before
 ## Disclaimer
 
 All data is simulated. This project is defensive only. It does not collect credentials, use real API keys, connect to production tenants, or perform offensive exploitation.
+
+For public reporting boundaries and safe sample-data guidance, see [SECURITY.md](SECURITY.md).
