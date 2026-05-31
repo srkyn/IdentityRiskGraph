@@ -7,9 +7,9 @@
 ![CloudTrail](https://img.shields.io/badge/AWS-CloudTrail_IAM-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Identity-first detection engineering for AWS IAM, nested access paths, and reviewable security context.**
+**Identity-first detection engineering for AWS IAM, nested access paths, and security findings a person can actually explain.**
 
-IdentityRiskGraph starts with realistic CloudTrail IAM events, detects risky identity control-plane changes, resolves nested access paths, and turns noisy IAM activity into reviewable risk context.
+IdentityRiskGraph starts with realistic CloudTrail IAM events, detects risky identity control-plane changes, resolves nested access paths, and turns noisy IAM activity into context an analyst can walk through.
 
 ![IdentityRiskGraph executive overview](screenshots/identityriskgraph-executive-overview.png)
 
@@ -29,7 +29,7 @@ Real screenshots from the running app and terminal detector are stored in [scree
 
 ## Why This Project Exists
 
-IAM and SOC teams often receive alerts that are technically accurate but operationally noisy. A policy attachment, group membership change, or console login may be normal in one context and risky in another.
+IAM and SOC teams get a lot of alerts that are technically accurate but still hard to act on. A policy attachment, group membership change, or console login might be normal in one context and risky in another.
 
 This project shows how identity context can make detection engineering more useful: who the identity is, what role they have, how access was inherited, what device or IP was used, and whether recent changes explain the activity.
 
